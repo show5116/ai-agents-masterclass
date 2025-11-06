@@ -16,7 +16,7 @@ https://docs.crewai.com/ko/concepts/agents
 여러 agent들이 모여서 특정 task들을 같이 수행하는 협업 그룹
 
 ```python
- @crew
+@crew
 def assemble_crew(self):
     return Crew(
         agents=self.agents,
@@ -57,3 +57,28 @@ ex) 이 기사 요약해줘
 
 CrewAI는 config폴더에 yaml파일들을 자동으로 읽어준다.  
 (@CrewBase 데코레이터를 이용)
+
+## Tool
+
+CrewAI에서는 tool에 대한 설명만 적어주면 tool로서 작동한다.
+
+```python
+@tool
+def count_letters(sentence: str):
+    """
+    This function is to count the amount of letters in a sentence.
+    The input is a `sentence` string.
+    The output is a number.
+    """
+    print("tool called with input:", sentence)
+    return len(sentence)
+```
+
+# search tool
+
+구글 Serper search tool을 활용할 수 있다.
+
+https://serper.dev/
+
+
+# scraping tool
