@@ -68,7 +68,6 @@ https://www.firecrawl.dev/
 페이지를 HTML markdown으로 크롤링 해 가져오는 기능을 한다.  
 검색 기능도 있어서 검색을 할 경우 검색 결과도 HTML markdown으로 스크랩 해 가져와준다.  
 
-
 ```
 app = FirecrawlApp(api_key=os.getenv("FIRECRAWL_API_KEY"))
 
