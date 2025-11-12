@@ -81,4 +81,11 @@ def count_letters(sentence: str):
 https://serper.dev/
 
 
-# scraping tool
+# scrape tool
+
+## Command Line
+
+```
+uv sync
+uv run -m playwright install
+```

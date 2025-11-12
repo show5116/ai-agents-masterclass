@@ -58,7 +58,7 @@ class NewsReaderAgent:
         )
 
 
-result = NewsReaderAgent().crew().kickoff(inputs={"topic": "Cambodia Thailand War."})
+result = NewsReaderAgent().crew().kickoff(inputs={"topic": "코스피 4000"})
 
 for task_output in result.tasks_output:
     print(task_output)
